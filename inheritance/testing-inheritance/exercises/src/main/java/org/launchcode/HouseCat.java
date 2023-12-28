@@ -1,3 +1,7 @@
+package org.launchcode;
+
+import org.launchcode.Cat;
+
 public class HouseCat extends Cat {
     private String name;
     private String species = "Felis catus";

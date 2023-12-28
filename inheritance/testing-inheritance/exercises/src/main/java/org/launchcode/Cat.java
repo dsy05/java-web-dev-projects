@@ -1,3 +1,5 @@
+package org.launchcode;
+
 public class Cat {
 
     private boolean tired = false;
@@ -63,4 +65,6 @@ public class Cat {
     public String noise () {
         return "Meeeeeeooooowww!";
     }
+
+
 }
