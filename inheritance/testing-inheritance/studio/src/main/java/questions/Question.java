@@ -16,6 +16,11 @@ public abstract class Question {
         createRandomizedChoiceMap(choiceArray);
     }
 
+    //For questions without choices
+    public Question(String question) {
+        this.question = question;
+    }
+
     public String getQuestion() {
         return question;
     }
