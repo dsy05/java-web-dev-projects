@@ -7,7 +7,11 @@ public class HouseCat extends Cat {
     private String species = "Felis catus";
 
     public HouseCat(String aName, double aWeight) {
-        super(aWeight);
+        super(aWeight); //super keyword allows subclass to access constructor base class
+        name = aName;
+    }
+
+    public HouseCat(String aName) {
         name = aName;
     }
 

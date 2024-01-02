@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Cat {
+public abstract class Cat {
 
     private boolean tired = false;
     private boolean hungry = false;
@@ -11,6 +11,10 @@ public class Cat {
 
     public Cat (double aWeight) {
         weight = aWeight;
+    }
+
+    public Cat() { //no-argument constructor
+        weight = 13;
     }
 
     /**** Getters and Setters ****/
@@ -62,9 +66,10 @@ public class Cat {
         hungry = false;
     }
 
-    public String noise () {
-        return "Meeeeeeooooowww!";
-    }
+    public abstract String noise ();
+//    {
+//        return "Meeeeeeooooowww!";
+//    }
 
 
 }
